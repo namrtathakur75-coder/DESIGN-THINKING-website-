@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Compass | Lost in 600 Acres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">⌖</span> Campus Compass</a>
+    <nav>
+      <a href="#explore">Explore</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#research">Research</a>
+    </nav>
+    <a class="nav-button" href="#explore">Find a place</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">LPU • FRESHER'S CAMPUS GUIDE</p>
+        <h1>Lost in 600 acres?<br><span>Find your way.</span></h1>
+        <p class="hero-copy">A simple campus guide to help LPU students find important places, plan a route and feel more confident moving around campus.</p>
+        <a class="primary-button" href="#explore">Explore campus <span>→</span></a>
+        <div class="hero-note"><span class="live-dot"></span> A student-friendly navigation prototype</div>
+      </div>
+      <div class="hero-art">
+        <div class="map-card">
+          <div class="map-label">CAMPUS OVERVIEW <span>DEMO MAP</span></div>
+          <div class="map-grid">
+            <div class="road road-one"></div><div class="road road-two"></div><div class="road road-three"></div>
+            <div class="place-pin pin-a">A</div><div class="place-pin pin-b">B</div>
+            <div class="place-pin pin-c">C</div><div class="place-pin pin-d">D</div>
+            <div class="map-building building-one">ACADEMIC<br>AREA</div>
+            <div class="map-building building-two">LIBRARY</div>
+            <div class="map-building building-three">HOSTELS</div>
+            <div class="map-building building-four">FOOD<br>COURT</div>
+            <div class="map-you"><span></span> YOU ARE HERE</div>
+          </div>
+          <div class="map-legend"><span><i class="legend-dot blue"></i> Academic</span><span><i class="legend-dot green"></i> Facilities</span><span><i class="legend-dot orange"></i> You</span></div>
+        </div>
+        <div class="floating-tag">Your campus, made simpler <b>✦</b></div>
+      </div>
+    </section>
+
+    <section class="explore section" id="explore">
+      <div class="section-heading">
+        <div><p class="eyebrow">START EXPLORING</p><h2>Where do you want to go?</h2></div>
+        <p>Search a place or choose a category<br>to find your next destination.</p>
+      </div>
+      <div class="search-row">
+        <span class="search-symbol">⌕</span>
+        <input id="searchInput" type="text" placeholder="Search blocks, library, hostel, food court...">
+        <button id="searchButton">Search</button>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All places</button>
+        <button class="filter" data-category="Academic">▦ Academic</button>
+        <button class="filter" data-category="Hostel">⌂ Hostels</button>
+        <button class="filter" data-category="Food">♨ Food</button>
+        <button class="filter" data-category="Essentials">✚ Essentials</button>
+      </div>
+      <div class="place-grid" id="placeGrid"></div>
+      <p class="small-note">Prototype note: listed destinations are sample entries. Confirm exact building names, locations and routes with official LPU campus information before real-world use.</p>
+    </section>
+
+    <section class="route-section section">
+      <div class="route-copy">
+        <p class="eyebrow">PLAN YOUR ROUTE</p>
+        <h2>One destination.<br><span>A clearer way there.</span></h2>
+        <p>Choose a starting point and destination to see a simple route instruction. This is a demonstration flow, not live GPS navigation.</p>
+      </div>
+      <div class="route-panel">
+        <div class="route-title"><span class="route-icon">↗</span><div><b>Route planner</b><small>Plan your campus visit</small></div></div>
+        <label for="startPoint">Starting point</label>
+        <select id="startPoint">
+          <option value="Main Gate">Main Gate</option>
+          <option value="Academic Area">Academic Area</option>
+          <option value="Central Library">Central Library</option>
+          <option value="Hostel Area">Hostel Area</option>
+          <option value="Food Court">Food Court</option>
+        </select>
+        <label for="endPoint">Where do you want to go?</label>
+        <select id="endPoint">
+          <option value="Academic Area">Academic Area</option>
+          <option value="Central Library">Central Library</option>
+          <option value="Hostel Area">Hostel Area</option>
+          <option value="Food Court">Food Court</option>
+          <option value="Health Centre">Health Centre</option>
+          <option value="Main Gate">Main Gate</option>
+        </select>
+        <button class="primary-button full" id="routeButton">Show route →</button>
+        <div class="route-result" id="routeResult">Your route instructions will appear here.</div>
+      </div>
+    </section>
+
+    <section class="how section" id="how-it-works">
+      <div class="center-heading"><p class="eyebrow">MADE FOR STUDENTS</p><h2>Finding your way, in 3 simple steps.</h2></div>
+      <div class="steps">
+        <article><div class="step-number">01</div><div class="step-icon">⌕</div><h3>Search a place</h3><p>Enter a block, facility or place you need to visit.</p></article>
+        <article><div class="step-number">02</div><div class="step-icon">⌖</div><h3>Choose a destination</h3><p>Check the place category and select where you want to go.</p></article>
+        <article><div class="step-number">03</div><div class="step-icon">↗</div><h3>Plan your route</h3><p>Use the route planner to understand your next steps.</p></article>
+      </div>
+    </section>
+
+    <section class="research section" id="research">
+      <div class="research-copy">
+        <p class="eyebrow">DESIGN THINKING PROJECT</p>
+        <h2>Built around the<br><span>student experience.</span></h2>
+        <p>This section is for adding your own interview evidence, observations and testing records for the INT335 project.</p>
+        <ul><li>Empathise: understand where students get confused.</li><li>Define: identify the campus-navigation problem.</li><li>Ideate: explore ways to make directions easier.</li><li>Prototype &amp; test: collect feedback and improve the design.</li></ul>
+      </div>
+      <div class="upload-panel">
+        <div class="upload-icon">＋</div>
+        <h3>Interview &amp; research evidence</h3>
+        <p>Choose interview audio/video, photos, transcripts or documents to display them in this project workspace.</p>
+        <label class="upload-button" for="evidenceFiles">＋ Add project files</label>
+        <input id="evidenceFiles" type="file" multiple accept="audio/*,video/*,image/*,.pdf,.doc,.docx,.txt">
+        <div id="fileList" class="file-list">No files selected yet.</div>
+        <p class="upload-warning">Files are only selected in this browser preview. They are not uploaded to a server or saved permanently.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-icon">⌖</span> Campus Compass</a><p>INT335 • Lost in 600 Acres • LPU Campus Navigation Prototype</p><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
